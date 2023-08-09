@@ -1,9 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {useParams } from "react-router-dom";
+import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
+import Loginpage from "./Pages/Loginpage";
+import Registerpage from "./Pages/Registerpage";
+import './index.css';
 function App() {
+  const catName = useParams();
   return (
-    <div > check</div>
+   <Router>
+      <Routes>
+         <Route path="/login" element={<Loginpage />} />
+         <Route path="/register" element={<Registerpage />} />
+      </Routes>
+   </Router>
   );
 }
 
