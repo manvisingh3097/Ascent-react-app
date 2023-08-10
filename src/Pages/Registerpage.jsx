@@ -69,14 +69,90 @@ const RegisterPage = () => {
           </div>
           <h2>Register</h2>
           <hr />
+
+
           <form onSubmit={formik.handleSubmit}>
             <div className="form-group">
               <label htmlFor="firstName">First Name</label>
               <input type="text" name="firstname" id="firstname"
                     className={formik.touched.firstName && formik.touched.firstName ? "form-control is-invalid" : "form-control"}
-                    
+                    value={formik.values.firstName}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
               />
+
+              {formik.errors.firstName &&formik.touched.firstName ? (
+                <small className="text-danger">
+                    {formik.errors.firstName}:
+                </small> 
+              ) : null
+              }
             </div>
+
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" id="email"
+                    className={formik.touched.email && formik.touched.email ? "form-control is-invalid" : "form-control"}
+                    value={formik.values.email}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+              />
+
+              {formik.errors.email &&formik.touched.email ? (
+                <small className="text-danger">
+                    {formik.errors.email}:
+                </small> 
+              ) : null
+              }
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="mobile">Mobile</label>
+              <input type="text" name="mobile" id="mobile"
+                    className={formik.touched.mobile && formik.touched.mobile ? "form-control is-invalid" : "form-control"}
+                    value={formik.values.mobile}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+              />
+
+              {formik.errors.mobile &&formik.touched.mobile ? (
+                <small className="text-danger">
+                    {formik.errors.mobile}:
+                </small> 
+              ) : null
+              }
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input type="text" name="password" id="password"
+                    className={formik.touched.password && formik.touched.password ? "form-control is-invalid" : "form-control"}
+                    value={formik.values.password}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+              />
+
+              {formik.errors.email &&formik.touched.password ? (
+                <small className="text-danger">
+                    {formik.errors.password}:
+                </small> 
+              ) : null
+              }
+            </div>
+
+            <input type="submit"
+            value="Register"
+            className="btn btn-primary btn-block"
+            disabled={!formik.isValid}
+            />
+            <br/>
+            <p className="text-center">
+
+                Already Registered? <a href="/login"> Click here  </a>
+
+            </p>
+
           </form>
         </div>
       </div>
