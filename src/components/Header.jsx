@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
-import Loginpage from '../Pages/Loginpage';
+import Loginpage from "../Pages/Loginpage";
+import { useLocation } from "react-router-dom";
 import "../index.css";
+
 const Navbar = () => {
-  const [loginStatus, setLoginStatus] = useState(false);
   
+
+  const [loginStatus, setLoginStatus] = useState(false);
 
   useEffect(() => {
     let token = localStorage.getItem("token");
@@ -22,7 +25,6 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      
       <div className="logo">Ascent Intelligent Technologies</div>
 
       <nav className="navigation">
@@ -33,9 +35,12 @@ const Navbar = () => {
       </nav>
 
       <div className="links">
-        <a href="/login">Login</a>
+        {loginStatus ? (
+          <button onClick={onLogoutHandler}>Logout</button>
+        ) : (
+          <a to="/login">Login</a>
+        )}
       </div>
-
     </header>
   );
 };

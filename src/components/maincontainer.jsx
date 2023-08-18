@@ -5,7 +5,6 @@ import Header from './Header';
 import MainContent from './maincomponent';
 import Footer from './Footer';
 
-
 const MainContainer = () => {
   return (
     <div className="main-container">
