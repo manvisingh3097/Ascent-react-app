@@ -1,17 +1,16 @@
 import React from "react";
-import { useState  , useEffect} from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Test from "../components/maincomponent"
 
-const Homepages = () => {
+
+const AboutPage = () => {
     return(
         <>
         <Header/>
-        
+       
         <Footer/>
         </>
     )
-}
+};
 
-export default Homepages;
+export default AboutPage;

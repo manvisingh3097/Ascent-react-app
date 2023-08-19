@@ -35,11 +35,21 @@ const Navbar = () => {
       </nav>
 
       <div className="links">
-        {loginStatus ? (
-          <button onClick={onLogoutHandler}>Logout</button>
-        ) : (
-          <a to="/login">Login</a>
-        )}
+      <ul className="navbar-nav ml-auto">
+                    {loginStatus ? (
+                        <li className="nav-item">
+                            <Link  onClick={onLogoutHandler}>
+                                Logout
+                            </Link>
+                        </li>
+                    ) : (
+                        <li className="nav-item">
+                            <Link  to="/login">
+                                Login
+                            </Link>
+                        </li>
+                    )}
+                </ul>
       </div>
     </header>
   );

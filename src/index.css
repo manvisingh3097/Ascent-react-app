@@ -24,6 +24,11 @@
   
   
 }
+body{
+  background-image: url('bgit.jpeg');
+  background-position: center;
+  background-size: cover;
+}
 
 .logo {
   font-size: 28px;
@@ -76,7 +81,7 @@
 }
 
 .main-container {
-  background-image: url('banner.png');
+  
   background-size: cover;
   background-position: center;
   flex-grow: 1; /* Expand to fill available space */
