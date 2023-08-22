@@ -7,7 +7,7 @@ const contact = () => {
     return(
         <>
         <Header/>
-       
+        
         <Footer/>
         </>
     )
