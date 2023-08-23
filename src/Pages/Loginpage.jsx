@@ -29,7 +29,7 @@ const Loginpage = () => {
           });
           localStorage.setItem("token", response.data.token);
           localStorage.setItem("token", JSON.stringify(response.data.user));
-          navigate("/");
+          navigate("/Mainpage");
         },
         (error) => {
           SetrequestedResponse({
@@ -64,7 +64,7 @@ const Loginpage = () => {
             <hr />
             <Formik
               initialValues={initialValues}
-              onSubmit={onsubmit}
+              onSubmit={onSubmit}
               validationSchema={validationSchema}
               validateOnMount
             >

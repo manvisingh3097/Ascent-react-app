@@ -21,7 +21,10 @@
  opacity: light;
   color: #fff;
   
-  
+Mainpage{
+  margin: auto ;
+  background-image: url('banner.png');
+}
   
 }
 body{
@@ -80,6 +83,10 @@ body{
   padding: 100px 0;
 }
 
+Maincomponent{
+  background-image: (url('banner.png'));
+}
+
 .main-container {
   
   background-size: cover;
@@ -103,7 +110,8 @@ body{
   position: fixed;
   bottom: 0;
   margin-left: 10px;
-  color: #fff;
+  color: #1f1b1b;
+  
   text-decoration: none;
   font-size: 20px;
 
