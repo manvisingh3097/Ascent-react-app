@@ -24,34 +24,82 @@ const Navbar = () => {
   };
 
   return (
-    <header className="header">
-      <div className="logo">Ascent Intelligent Technologies</div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">
+        Ascent Intelligent Technologies
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-      <nav className="navigation">
-        <a href="/">HOME</a>
-        <a href="ABOUT">ABOUT </a>
-        <a href="BLOG">BLOG</a>
-        <a href="CONTACT">CONTACT</a>
-      </nav>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="ABOUT">
+            ABOUT
+            </a>
+          </li>
 
-      <div className="links">
-      <ul className="navbar-nav ml-auto">
-                    {loginStatus ? (
-                        <li className="nav-item">
-                            <Link  onClick={onLogoutHandler}>
-                                Logout
-                            </Link>
-                        </li>
-                    ) : (
-                        <li className="nav-item">
-                            <Link  to="/login">
-                                Login
-                            </Link>
-                        </li>
-                    )}
-                </ul>
+          <li className="nav-item">
+            <a className="nav-link" href="CONTACT">
+            CONTACT
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <a className="nav-link" href="BLOG">
+            BLOG
+            </a>
+          </li>
+        </ul>
+        <div className="links">
+
+<ul className="navbar-nav ml-auto">
+
+{loginStatus ? (
+
+<li className="nav-item">
+
+<Link  onClick={onLogoutHandler}>
+
+Logout
+
+</Link>
+
+</li>
+
+) : (
+
+<li className="nav-item">
+
+<Link  to="/login">
+
+Login
+
+</Link>
+
+</li>
+
+)}
+
+</ul>
+
+</div>
       </div>
-    </header>
+    </nav>
   );
 };
 

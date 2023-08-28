@@ -1,4 +1,5 @@
 import banner from '../banner.png';
+import MainContainer from './maincontainer';
 
  const Section = () => {
   

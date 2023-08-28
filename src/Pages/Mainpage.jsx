@@ -8,7 +8,7 @@ const Mainpage = () => {
     return(
         <>
         <Header/>
-        <mainpagecomponents/>
+      
         <Footer/>
         </>
     )

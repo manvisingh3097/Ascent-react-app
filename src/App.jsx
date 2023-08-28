@@ -36,6 +36,7 @@ function App() {
          <Route path='/homepage' element={<Homepage />} />
          <Route path='/blog' element={<Blogpage />} />
          <Route path='/contact' element={<Contactpage />} />
+         
 
        </Routes>
       </BrowserRouter>
