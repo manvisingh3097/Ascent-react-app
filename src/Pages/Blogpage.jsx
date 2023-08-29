@@ -3,15 +3,14 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Blog from "../components/Blog";
 
-
 const Blogpage = () => {
-    return(
-        <>
-        <Header/>
-       <Blog/>
-        <Footer/>
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Blog />
+      <Footer />
+    </>
+  );
 };
 
 export default Blogpage;

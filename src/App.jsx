@@ -6,7 +6,7 @@ import './index.css';
 import RegisterPage from './Pages/Registerpage';
 import AboutPage from './Pages/aboutpage';
 import Contactpage from './Pages/Contactpage';
-import Homepage from './Pages/Homepage';
+import Homepage from './Pages/Homepage/Homepage';
 import Blogpage from './Pages/Blogpage';
 import Mainpage from './Pages/Mainpage';
 
@@ -36,7 +36,7 @@ function App() {
          <Route path='/homepage' element={<Homepage />} />
          <Route path='/blog' element={<Blogpage />} />
          <Route path='/contact' element={<Contactpage />} />
-         
+
 
        </Routes>
       </BrowserRouter>

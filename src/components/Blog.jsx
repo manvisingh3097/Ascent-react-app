@@ -14,7 +14,7 @@ const BlogPage = () => {
   return (
     <div className='blog'>
       <section className="sub-header">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className=" ">
           <a className="navbar-brand" href="index.html"></a>
           <button className="navbar-toggler" type="button" onClick={showMenu}>
             <span className="navbar-toggler-icon"></span>

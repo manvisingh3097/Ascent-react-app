@@ -1,11 +1,11 @@
-.active{
+/* .active{
     background: rgb(82, 80, 80);
     color: rgb(21, 19, 19);
     border-radius: 2rem;
     display: inline-block;
     display: flex;
   }
-  
+   */
 
   /* App.css */
 .app {
@@ -15,13 +15,13 @@
 }
 
 .header {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
  opacity: light;
-  color: #fff;
- 
+  color: #fff; */
+
   
 .blog{
   display:flex ;
@@ -119,10 +119,14 @@ body{
   
   border-radius: 5px;
   font-weight: 100;
+  color: blue;
+
+
   
-  
-  
-  
+}
+
+.link{
+  font-family: cursive ;
 }
 
 .social-links a {
@@ -164,4 +168,8 @@ body{
   background-image: url('bgit.jpeg');
   
   background-position: center;
+}
+
+.links{
+  margin-right: 100%;
 }
