@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 const Contact = () => {
   const showMenu = () => {
@@ -12,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className='rithik'>
       <section className="sub-header">
         
         <h1 className="text-center mt-3"> CONTACT US </h1>

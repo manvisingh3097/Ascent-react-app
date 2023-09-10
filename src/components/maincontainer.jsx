@@ -8,6 +8,7 @@ import Footer from './Footer';
 const MainContainer = () => {
   return (
     <div className="main-container">
+     
       <Header />
       <Section />
       <Footer />

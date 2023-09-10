@@ -16,11 +16,11 @@ import Mainpage from './Pages/Mainpage';
 
 function App() {
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(false);
 
-  const handleLoginSubmit = () => {
-    setLoggedIn(true);
-  };
+  // const handleLoginSubmit = () => {
+  //   setLoggedIn(true);
+  // };
   
   return (
 
